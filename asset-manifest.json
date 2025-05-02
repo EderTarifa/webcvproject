@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/webcvproject/static/css/main.435d5fe5.chunk.css",
-    "main.js": "/webcvproject/static/js/main.fffdfd66.chunk.js",
-    "main.js.map": "/webcvproject/static/js/main.fffdfd66.chunk.js.map",
-    "runtime~main.js": "/webcvproject/static/js/runtime~main.88a45c17.js",
-    "runtime~main.js.map": "/webcvproject/static/js/runtime~main.88a45c17.js.map",
-    "static/js/2.9e11b540.chunk.js": "/webcvproject/static/js/2.9e11b540.chunk.js",
-    "static/js/2.9e11b540.chunk.js.map": "/webcvproject/static/js/2.9e11b540.chunk.js.map",
-    "static/js/3.ba8b7f13.chunk.js": "/webcvproject/static/js/3.ba8b7f13.chunk.js",
-    "static/js/3.ba8b7f13.chunk.js.map": "/webcvproject/static/js/3.ba8b7f13.chunk.js.map",
+    "main.css": "/webcvproject/static/css/main.caf8724c.css",
+    "main.js": "/webcvproject/static/js/main.966c10ff.js",
+    "static/js/453.0c380720.chunk.js": "/webcvproject/static/js/453.0c380720.chunk.js",
     "index.html": "/webcvproject/index.html",
-    "precache-manifest.432b9f5e6b710da647b885f61e89e70d.js": "/webcvproject/precache-manifest.432b9f5e6b710da647b885f61e89e70d.js",
-    "service-worker.js": "/webcvproject/service-worker.js",
-    "static/css/main.435d5fe5.chunk.css.map": "/webcvproject/static/css/main.435d5fe5.chunk.css.map",
-    "static/media/logo.svg": "/webcvproject/static/media/logo.06e73328.svg"
-  }
+    "main.caf8724c.css.map": "/webcvproject/static/css/main.caf8724c.css.map",
+    "main.966c10ff.js.map": "/webcvproject/static/js/main.966c10ff.js.map",
+    "453.0c380720.chunk.js.map": "/webcvproject/static/js/453.0c380720.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caf8724c.css",
+    "static/js/main.966c10ff.js"
+  ]
 }

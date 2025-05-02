@@ -13,7 +13,7 @@
     "web-vitals": "^2.1.4"
   },
 
-  "homepage": "https://EderTarifa.github.io/mi-cv-web",
+  "homepage": "https://edertarifa.github.io/webcvproject/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

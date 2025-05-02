@@ -1,24 +1,17 @@
-// src/components/CVTraditional.jsx
 import React from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
+
+// Configuración del worker
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 export default function CVTraditional() {
   return (
     <section>
       <h2>CV Tradicional</h2>
-      <object
-        data={`${process.env.PUBLIC_URL}/files/CV_TRADICIOINAL.pdf`}
-        type="application/pdf"
-        width="100%"
-        height="500px"
-      >
-        <p>
-          Tu navegador no soporta PDFs. Descarga la carta{' '}
-          <a href={`${process.env.PUBLIC_URL}/files/CV_TRADICIOINAL.pdf`}>
-            aquí
-          </a>
-          .
-        </p>
-      </object>
+      <Document file="/files/CV_TRADICIONAL.pdf">
+        <Page pageNumber={1} />
+      </Document>
     </section>
   );
 }

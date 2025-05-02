@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mi-cv-web/static/css/main.435d5fe5.chunk.css",
-    "main.js": "/mi-cv-web/static/js/main.fffdfd66.chunk.js",
-    "main.js.map": "/mi-cv-web/static/js/main.fffdfd66.chunk.js.map",
-    "runtime~main.js": "/mi-cv-web/static/js/runtime~main.f1fc08de.js",
-    "runtime~main.js.map": "/mi-cv-web/static/js/runtime~main.f1fc08de.js.map",
-    "static/js/2.9e11b540.chunk.js": "/mi-cv-web/static/js/2.9e11b540.chunk.js",
-    "static/js/2.9e11b540.chunk.js.map": "/mi-cv-web/static/js/2.9e11b540.chunk.js.map",
-    "static/js/3.ba8b7f13.chunk.js": "/mi-cv-web/static/js/3.ba8b7f13.chunk.js",
-    "static/js/3.ba8b7f13.chunk.js.map": "/mi-cv-web/static/js/3.ba8b7f13.chunk.js.map",
-    "index.html": "/mi-cv-web/index.html",
-    "precache-manifest.e0a737a52a51da689e1aa6b1ade4cd43.js": "/mi-cv-web/precache-manifest.e0a737a52a51da689e1aa6b1ade4cd43.js",
-    "service-worker.js": "/mi-cv-web/service-worker.js",
-    "static/css/main.435d5fe5.chunk.css.map": "/mi-cv-web/static/css/main.435d5fe5.chunk.css.map",
-    "static/media/logo.svg": "/mi-cv-web/static/media/logo.06e73328.svg"
+    "main.css": "/webcvproject/static/css/main.435d5fe5.chunk.css",
+    "main.js": "/webcvproject/static/js/main.fffdfd66.chunk.js",
+    "main.js.map": "/webcvproject/static/js/main.fffdfd66.chunk.js.map",
+    "runtime~main.js": "/webcvproject/static/js/runtime~main.88a45c17.js",
+    "runtime~main.js.map": "/webcvproject/static/js/runtime~main.88a45c17.js.map",
+    "static/js/2.9e11b540.chunk.js": "/webcvproject/static/js/2.9e11b540.chunk.js",
+    "static/js/2.9e11b540.chunk.js.map": "/webcvproject/static/js/2.9e11b540.chunk.js.map",
+    "static/js/3.ba8b7f13.chunk.js": "/webcvproject/static/js/3.ba8b7f13.chunk.js",
+    "static/js/3.ba8b7f13.chunk.js.map": "/webcvproject/static/js/3.ba8b7f13.chunk.js.map",
+    "index.html": "/webcvproject/index.html",
+    "precache-manifest.432b9f5e6b710da647b885f61e89e70d.js": "/webcvproject/precache-manifest.432b9f5e6b710da647b885f61e89e70d.js",
+    "service-worker.js": "/webcvproject/service-worker.js",
+    "static/css/main.435d5fe5.chunk.css.map": "/webcvproject/static/css/main.435d5fe5.chunk.css.map",
+    "static/media/logo.svg": "/webcvproject/static/media/logo.06e73328.svg"
   }
 }

@@ -1,40 +1,22 @@
-// src/components/CVTraditional.jsx
-import React, { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
-import './pages.css';
+// src/components/VideoPlayer.jsx
+import React from 'react';
+import './pages.css'; // puedes aprovechar estilos generales
 
-pdfjs.GlobalWorkerOptions.workerSrc =
-  `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
-
-export default function Pages() {
-  const fileUrl = `${process.env.PUBLIC_URL}/files/Blog_Divulgativo.pdf`;
-  const [numPages, setNumPages] = useState(0);
-
-  function onDocumentLoadSuccess({ numPages: total }) {
-    setNumPages(total);
-  }
+export default function VideoCV() {
+  // Asume que tu vídeo está en public/videos/miVideo.mp4
+  const videoUrl = `${process.env.PUBLIC_URL}/files/CV_VIDEO.mp4`;
 
   return (
     <section className="cv-wrapper">
-      <div className="document-container">
-        <Document
-          file={fileUrl}
-          onLoadSuccess={onDocumentLoadSuccess}
-          onLoadError={console.error}
+      <div className="video-container">
+        <video
+          src={videoUrl}
+          width="800"
+          controls
+          poster={`${process.env.PUBLIC_URL}/videos/miVideo-poster.jpg`} 
         >
-          {/* 2) Wrapper para las páginas */}
-          <div className="pages-wrapper">
-            {Array.from({ length: numPages }, (_, i) => (
-              <Page
-                key={i}
-                pageNumber={i + 1}
-                width={800}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
-            ))}
-          </div>
-        </Document>
+          Tu navegador no soporta el elemento <code>video</code>.
+        </video>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import './pages.css'; // puedes aprovechar estilos generales
 
 export default function VideoCV() {
   // Asume que tu vídeo está en public/videos/miVideo.mp4
-  const videoUrl = `${process.env.PUBLIC_URL}/files/CV_VIDEO.mp4`;
+  const videoUrl = `${process.env.PUBLIC_URL}/files/CV_VIDEO_small.mp4`;
 
   return (
     <section className="cv-wrapper">

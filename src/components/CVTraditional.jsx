@@ -1,33 +1,41 @@
 // src/components/CVTraditional.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import './pages.css';
 
-// Worker (usa la .mjs en CDN o en public, según tu preferencia)
-pdfjs.GlobalWorkerOptions.workerSrc = 
+pdfjs.GlobalWorkerOptions.workerSrc =
   `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-export default function CVTraditional() {
-  const pdfUrl = `${process.env.PUBLIC_URL}/files/CV_TRADICIONAL.pdf`;
+export default function Pages() {
+  const fileUrl = `${process.env.PUBLIC_URL}/files/CV_TRADICIONAL.pdf`;
+  const [numPages, setNumPages] = useState(0);
+
+  function onDocumentLoadSuccess({ numPages: total }) {
+    setNumPages(total);
+  }
 
   return (
-    <section>
-      <h2></h2>
-      <Document
-        file={{ url: pdfUrl }}
-        onLoadError={error => console.error('Error loading PDF:', error)}
-        loading="Cargando CV…"
-        noData="No hay ningún CV para mostrar"
-      >
-        <Page pageNumber={1} />
-      </Document>
-      <Document
-        file={{ url: pdfUrl }}
-        onLoadError={error => console.error('Error loading PDF:', error)}
-        loading="Cargando CV…"
-        noData="No hay ningún CV para mostrar"
-      >
-        <Page pageNumber={2} />
-      </Document>
+    <section className="cv-wrapper">
+      <div className="document-container">
+        <Document
+          file={fileUrl}
+          onLoadSuccess={onDocumentLoadSuccess}
+          onLoadError={console.error}
+        >
+          {/* 2) Wrapper para las páginas */}
+          <div className="pages-wrapper">
+            {Array.from({ length: numPages }, (_, i) => (
+              <Page
+                key={i}
+                pageNumber={i + 1}
+                width={800}
+                renderTextLayer={false}
+                renderAnnotationLayer={false}
+              />
+            ))}
+          </div>
+        </Document>
+      </div>
     </section>
   );
 }

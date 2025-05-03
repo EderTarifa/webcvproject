@@ -15,4 +15,7 @@
     color: #fff;
     border-bottom: 2px solid #61dafb;
   }
+  .navbar ul {
+    justify-content: center;
+}
   
